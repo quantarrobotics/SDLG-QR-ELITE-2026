@@ -6,7 +6,7 @@ Proyecto de robótica utilizando un robot **LEGO SPIKE** programado con **Pybric
 
 ### 📷 Robot
 
-![Robot LEGO SPIKE con cámara M-Vision](robot-mvision.jpeg)
+![Robot LEGO SPIKE con cámara M-Vision](/Photo/robot-mvision.jpeg)
 
 > **Figura 1.** Robot LEGO SPIKE programado con Pybricks e integrado con cámara OpenMV M-Vision de MATRIX.
 
