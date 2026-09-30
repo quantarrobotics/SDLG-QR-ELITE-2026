@@ -33,6 +33,7 @@ El robot utiliza **Pybricks** para controlar los motores y sensores del LEGO SPI
  │   └── main.py
  └── 📁 Pybricks Code
      └── ZeroCode.py
+     └── MainCAM.py
 ```
 
 ### 👨‍💻 Autor
