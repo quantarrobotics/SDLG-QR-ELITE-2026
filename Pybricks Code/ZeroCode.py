@@ -1,1 +1,42 @@
-
+from pybricks.hubs import InventorHub
+from pybricks.pupdevices import Motor, ColorSensor, UltrasonicSensor
+from pybricks.parameters import Button, Color, Direction, Port, Side, Stop
+from pybricks.robotics import DriveBase
+from pybricks.tools import wait, StopWatch
+cronometro = StopWatch()
+hub = InventorHub()
+MotorIZQ = Motor (Port.B, Direction.COUNTERCLOCKWISE)
+MotorDER = Motor(Port.F, Direction.CLOCKWISE)
+Movimiento = DriveBase (left_motor= MotorIZQ, right_motor= MotorDER, wheel_diameter=83, axle_track= 161)
+rampita = Motor(Port.C, Direction.CLOCKWISE)
+Ligas = Motor (Port.D, Direction.CLOCKWISE)
+Movimiento.settings (straight_speed= 1400, straight_acceleration= 2800)
+while True:
+ Ligas.run (1500)
+ Movimiento.straight (900)
+ Movimiento.turn (-90)
+ Ligas.stop ()
+ Movimiento.straight (85) 
+ Movimiento.straight (-35)
+ Movimiento.turn (-85)
+ Movimiento.straight (790)
+ Movimiento.straight (-35)
+ Movimiento.turn (-80)
+ Movimiento.straight (350)
+ Movimiento.straight (-25)
+ Movimiento.turn (-89)
+ Ligas.run (1500)
+ Movimiento.straight (850)
+ wait (2000)
+ Ligas.stop ()
+ Movimiento.turn (-90)
+ Movimiento.straight (320)
+ Movimiento.straight (-35)
+ Movimiento.turn (-85)
+ Movimiento.straight (850)
+ Movimiento.straight (-35)
+ Movimiento.turn (-80)
+ Movimiento.straight (350)
+ Movimiento.straight (-220)
+ Movimiento.turn (-95)
+ Movimiento.straight (-65)
